@@ -1,0 +1,52 @@
+<div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 navbar-styles">
+        <hr />
+        <ul class="nav nav-tabs">
+          <li
+            role="presentation"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <a routerLink="/home">Home</a>
+          </li>
+          <li role="presentation" routerLinkActive="active">
+            <a routerLink="/aboutMe">About Me</a>
+          </li>
+          <li role="presentation" routerLinkActive="active">
+            <a routerLink="/specialties">Specialties</a>
+          </li>
+          <li role="presentation" routerLinkActive="active">
+            <a routerLink="/resources">Resources</a>
+          </li>
+          <li role="presentation" routerLinkActive="active">
+            <a routerLink="/faq">FAQ</a>
+          </li>
+          <li role="presentation" routerLinkActive="active">
+            <a routerLink="/blog">Blog</a>
+          </li>
+
+          <li role="presentation" routerLinkActive="active">
+            <a [routerLink]="['/contactMe']">Contact Me</a>
+          </li>
+          <li>
+            <a
+              href="https://www.therapyportal.com/p/papercranescounseling/"
+              target="_blank"
+              >Client Portal</a
+            >
+          </li>
+        </ul>
+
+        <!-- <hr /> -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-md-12">
+        <br />
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+.background {
+  background-image: url("https://juegosrev.com/wp-content/uploads/2017/06/White-Abstract-Wallpapers-Gallery-89-Plus-PIC-WPW405898-1.png");
+  height: 125%;
+  background-color: rgb(165, 192, 250);
+}
+.phoneNumber {
+  font-size: 200%;
+}
+.address {
+  font-size: 65%;
+}

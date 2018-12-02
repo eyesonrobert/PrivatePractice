@@ -1,0 +1,11 @@
+.navbar-default {
+  background-color: rgb(26, 219, 219);
+  border-color: brown;
+  color: black;
+}
+
+.navbar-styles {
+  font-size: 150%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
