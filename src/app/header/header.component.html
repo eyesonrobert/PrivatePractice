@@ -1,7 +1,7 @@
 <div>
-  <div class="container">
+  <div class="col-md-offset-1">
     <div class="row">
-      <div class="col-md-10 navbar-styles">
+      <div class="col-md-8 navbar-styles col-md-offset-1">
         <hr />
         <ul class="nav nav-tabs">
           <li
@@ -14,8 +14,12 @@
           <li role="presentation" routerLinkActive="active">
             <a routerLink="/aboutMe">About Me</a>
           </li>
-          <li role="presentation" routerLinkActive="active">
-            <a routerLink="/specialties">Specialties</a>
+          <li role="presentation" routerLinkActive="active" class="dropdown">
+            <a>Specialties</a>
+            <div class="dropdown-content">
+              <a routerLink="/specialties">CBT</a> <a href="#">DBT</a>
+              <a href="#">Option 3</a>
+            </div>
           </li>
           <li role="presentation" routerLinkActive="active">
             <a routerLink="/resources">Resources</a>
@@ -30,7 +34,7 @@
           <li role="presentation" routerLinkActive="active">
             <a [routerLink]="['/contactMe']">Contact Me</a>
           </li>
-          <li>
+          <li role="presentation" routerLinkActive="active">
             <a
               href="https://www.therapyportal.com/p/papercranescounseling/"
               target="_blank"
@@ -38,8 +42,6 @@
             >
           </li>
         </ul>
-
-        <!-- <hr /> -->
       </div>
     </div>
     <div class="row">

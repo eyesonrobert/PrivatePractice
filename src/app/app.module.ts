@@ -12,6 +12,9 @@ import { SpecialtiesComponent } from "./specialties/specialties.component";
 import { ResourcesComponent } from "./resources/resources.component";
 import { FAQComponent } from "./faq/faq.component";
 import { BlogComponent } from "./blog/blog.component";
+import { BusinessInformationComponent } from "./header/business-information/business-information.component";
+import { BsDropdownModule } from "ngx-bootstrap/dropdown";
+import { CommonModule } from "@angular/common";
 
 const appRoutes: Routes = [
   { path: "aboutMe", component: AboutmeComponent },
@@ -34,9 +37,15 @@ const appRoutes: Routes = [
     SpecialtiesComponent,
     ResourcesComponent,
     FAQComponent,
-    BlogComponent
+    BlogComponent,
+    BusinessInformationComponent
   ],
-  imports: [BrowserModule, RouterModule.forRoot(appRoutes)],
+  imports: [
+    BrowserModule,
+    CommonModule,
+    BsDropdownModule.forRoot(appRoutes),
+    RouterModule.forRoot(appRoutes)
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
