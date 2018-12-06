@@ -13,7 +13,6 @@ import { ResourcesComponent } from "./resources/resources.component";
 import { FAQComponent } from "./faq/faq.component";
 import { BlogComponent } from "./blog/blog.component";
 import { BusinessInformationComponent } from "./header/business-information/business-information.component";
-import { BsDropdownModule } from "ngx-bootstrap/dropdown";
 import { CommonModule } from "@angular/common";
 
 const appRoutes: Routes = [
@@ -40,12 +39,7 @@ const appRoutes: Routes = [
     BlogComponent,
     BusinessInformationComponent
   ],
-  imports: [
-    BrowserModule,
-    CommonModule,
-    BsDropdownModule.forRoot(appRoutes),
-    RouterModule.forRoot(appRoutes)
-  ],
+  imports: [BrowserModule, CommonModule, RouterModule.forRoot(appRoutes)],
   providers: [],
   bootstrap: [AppComponent]
 })
