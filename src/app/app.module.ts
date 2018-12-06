@@ -40,7 +40,12 @@ const appRoutes: Routes = [
     BlogComponent,
     BusinessInformationComponent
   ],
-  imports: [BrowserModule, CommonModule, RouterModule.forRoot(appRoutes)],
+  imports: [
+    BrowserModule,
+    NgbModule,
+    CommonModule,
+    RouterModule.forRoot(appRoutes)
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

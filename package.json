@@ -23,7 +23,6 @@
     "@ng-bootstrap/ng-bootstrap": "^4.0.0",
     "angular-bootstrap-md": "^6.3.0",
     "angular-ui-carousel": "^0.1.10",
-    "bootstrap": "^3.3.7",
     "bootstrap-4-migrate": "^1.0.1",
     "core-js": "^2.5.4",
     "ngx-bootstrap": "^3.1.2",
