@@ -15,8 +15,10 @@ import { FAQComponent } from "./faq/faq.component";
 import { BlogComponent } from "./blog/blog.component";
 import { BusinessInformationComponent } from "./header/business-information/business-information.component";
 import { CommonModule } from "@angular/common";
+import { NavbarComponent } from "./navbar/navbar.component";
 
 const appRoutes: Routes = [
+  { path: "", component: HomeComponent },
   { path: "aboutMe", component: AboutmeComponent },
   { path: "contactMe", component: ContactmeComponent },
   { path: "home", component: HomeComponent },
@@ -38,7 +40,8 @@ const appRoutes: Routes = [
     ResourcesComponent,
     FAQComponent,
     BlogComponent,
-    BusinessInformationComponent
+    BusinessInformationComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
