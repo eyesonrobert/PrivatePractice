@@ -37,6 +37,8 @@
 .navbar-list {
   margin-left: 10px;
   color: black;
+  font-family: "Fugaz One", cursive;
+  font-size: 90%;
 }
 
 .navbar-list-specialties {

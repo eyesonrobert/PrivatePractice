@@ -1,56 +1,75 @@
-<p>contactme works!</p>
+<!--
+  <div class="background col-md-6 offset-1">
+    <br /><br />
 
-<p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-  convallis sagittis quam, a luctus mi pulvinar eu. Proin feugiat massa ut diam
-  volutpat porta. Nullam at quam leo. Suspendisse ut risus eu tellus egestas
-  rutrum. Sed turpis nisl, tempor eu odio in, convallis sodales libero. Integer
-  sit amet odio in odio molestie ullamcorper vitae at risus. Quisque varius leo
-  leo, ut viverra risus condimentum at. Pellentesque habitant morbi tristique
-  senectus et netus et malesuada fames ac turpis egestas. Phasellus posuere
-  laoreet neque, et gravida metus pretium in. Mauris libero odio, facilisis eu
-  dictum at, aliquet et erat. Cras eu cursus ligula. Curabitur vitae tempor
-  lectus. In dignissim, justo et ultrices viverra, massa velit gravida urna, in
-  ornare nisi sapien non turpis. Integer vitae metus bibendum, bibendum augue
-  volutpat, congue libero. Vestibulum in mauris vitae arcu cursus eleifend in eu
-  lacus. Sed consequat nisi nisi, et pellentesque nulla viverra id. Ut cursus
-  erat eu augue bibendum pellentesque. Pellentesque habitant morbi tristique
-  senectus et netus et malesuada fames ac turpis egestas.
-</p>
-<hr />
-<p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-  convallis sagittis quam, a luctus mi pulvinar eu. Proin feugiat massa ut diam
-  volutpat porta. Nullam at quam leo. Suspendisse ut risus eu tellus egestas
-  rutrum. Sed turpis nisl, tempor eu odio in, convallis sodales libero. Integer
-  sit amet odio in odio molestie ullamcorper vitae at risus. Quisque varius leo
-  leo, ut viverra risus condimentum at. Pellentesque habitant morbi tristique
-  senectus et netus et malesuada fames ac turpis egestas. Phasellus posuere
-  laoreet neque, et gravida metus pretium in. Mauris libero odio, facilisis eu
-  dictum at, aliquet et erat. Cras eu cursus ligula. Curabitur vitae tempor
-  lectus. In dignissim, justo et ultrices viverra, massa velit gravida urna, in
-  ornare nisi sapien non turpis. Integer vitae metus bibendum, bibendum augue
-  volutpat, congue libero. Vestibulum in mauris vitae arcu cursus eleifend in eu
-  lacus. Sed consequat nisi nisi, et pellentesque nulla viverra id. Ut cursus
-  erat eu augue bibendum pellentesque. Pellentesque habitant morbi tristique
-  senectus et netus et malesuada fames ac turpis egestas.
-</p>
-<hr />
-<p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-  convallis sagittis quam, a luctus mi pulvinar eu. Proin feugiat massa ut diam
-  volutpat porta. Nullam at quam leo. Suspendisse ut risus eu tellus egestas
-  rutrum. Sed turpis nisl, tempor eu odio in, convallis sodales libero. Integer
-  sit amet odio in odio molestie ullamcorper vitae at risus. Quisque varius leo
-  leo, ut viverra risus condimentum at. Pellentesque habitant morbi tristique
-  senectus et netus et malesuada fames ac turpis egestas. Phasellus posuere
-  laoreet neque, et gravida metus pretium in. Mauris libero odio, facilisis eu
-  dictum at, aliquet et erat. Cras eu cursus ligula. Curabitur vitae tempor
-  lectus. In dignissim, justo et ultrices viverra, massa velit gravida urna, in
-  ornare nisi sapien non turpis. Integer vitae metus bibendum, bibendum augue
-  volutpat, congue libero. Vestibulum in mauris vitae arcu cursus eleifend in eu
-  lacus. Sed consequat nisi nisi, et pellentesque nulla viverra id. Ut cursus
-  erat eu augue bibendum pellentesque. Pellentesque habitant morbi tristique
-  senectus et netus et malesuada fames ac turpis egestas.
-</p>
-<hr />
+    <form>
+      <div>
+        <input class="form-control" type="text" placeholder="Your Name" />
+      </div>
+      <br />
+      <div>
+        <input class="form-control" type="email" placeholder="Your Email" />
+      </div>
+      <br />
+      <div>
+        <textarea
+          class="form-control"
+          cols="80"
+          rows="8"
+          placeholder="What's on your mind?"
+        ></textarea>
+      </div>
+      <br />
+      <button class="btn btn-info offset-11">Submit</button>
+    </form>
+  </div>
+-->
+
+<div class="container col-md-7 offset-1">
+  <h1>Contact Form</h1>
+  <form #contactForm="ngForm">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        required
+        [(ngModel)]="model.name"
+        name="name"
+        placeholder="Your Name"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input
+        type="text"
+        class="form-control"
+        id="email"
+        required
+        [(ngModel)]="model.email"
+        name="email"
+        placeholder="Your Email"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea
+        class="form-control"
+        cols="80"
+        rows="8"
+        id="message"
+        required
+        [(ngModel)]="model.message"
+        name="message"
+        placeholder="What's on your mind?"
+      ></textarea>
+    </div>
+
+    <button (click)="onSubmit()" class="btn btn-info offset-11">Submit</button>
+  </form>
+  <br />
+  <br />
+</div>

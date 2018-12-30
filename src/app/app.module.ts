@@ -1,6 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { FormsModule } from "../../node_modules/@angular/forms";
 
 import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./header/header.component";
@@ -16,6 +17,7 @@ import { BlogComponent } from "./blog/blog.component";
 import { BusinessInformationComponent } from "./header/business-information/business-information.component";
 import { CommonModule } from "@angular/common";
 import { NavbarComponent } from "./navbar/navbar.component";
+import { CbtComponent } from "./specialties/cbt/cbt.component";
 
 const appRoutes: Routes = [
   { path: "", component: HomeComponent },
@@ -25,7 +27,8 @@ const appRoutes: Routes = [
   { path: "specialties", component: SpecialtiesComponent },
   { path: "resources", component: ResourcesComponent },
   { path: "faq", component: FAQComponent },
-  { path: "blog", component: BlogComponent }
+  { path: "blog", component: BlogComponent },
+  { path: "cbt", component: CbtComponent }
 ];
 
 @NgModule({
@@ -41,10 +44,12 @@ const appRoutes: Routes = [
     FAQComponent,
     BlogComponent,
     BusinessInformationComponent,
-    NavbarComponent
+    NavbarComponent,
+    CbtComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     NgbModule,
     CommonModule,
     RouterModule.forRoot(appRoutes)

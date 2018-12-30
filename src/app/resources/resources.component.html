@@ -1,13 +1,13 @@
-<div>
+<div class="background">
   <br />
   <div id="row1">
     <div id="column1" class="col-md-6">
       <div>
         <button
-          class="offset-4 btn btn-primary mb-2"
+          class="offset-4 btn btn-info mb-2"
           (click)="showHotline = !showHotline"
         >
-          Hotlines
+          Talklines
         </button>
         <div *ngIf="showHotline" class="info">
           <table class="table table-hover">
@@ -15,7 +15,7 @@
               <tr>
                 <th scope="col">Organization</th>
                 <th scope="col">Phone</th>
-                <th scope="col">Email</th>
+                <th scope="col">Website</th>
               </tr>
             </thead>
             <tbody class="overflow">
@@ -32,36 +32,39 @@
                 <td>N/A</td>
               </tr>
               <tr>
-                <td>LA County Department of Mental Health</td>
-                <td>800-854-7771</td>
+                <td>Commnity Helpline</td>
+                <td>877-541-2525</td>
                 <td>N/A</td>
               </tr>
-              <tr
-                title="Suicide hotline: for those in suicidal crisis or know someone who is in crisis"
-              >
-                <td>LifeLine</td>
-                <td>800-273-8255</td>
+              <tr>
+                <td>Project Return Peer Suppport Warmline</td>
+                <td>888-448-9777</td>
                 <td>N/A</td>
               </tr>
-              <tr
-                title="Suicide hotline: for those in suicidal crisis or know someone who is in crisis"
-              >
-                <td>LifeLine</td>
-                <td>800-273-8255</td>
+              <tr title="Intended for LA Country residents only">
+                <td>LA Warmline</td>
+                <td>855-952-9276</td>
                 <td>N/A</td>
               </tr>
-              <tr
-                title="Suicide hotline: for those in suicidal crisis or know someone who is in crisis"
-              >
-                <td>LifeLine</td>
-                <td>800-273-8255</td>
+              <tr title="Intended for OC residents">
+                <td>NAMI OC Warmline</td>
+                <td>877-910-9276</td>
                 <td>N/A</td>
               </tr>
-              <tr
-                title="Suicide hotline: for those in suicidal crisis or know someone who is in crisis"
-              >
-                <td>LifeLine</td>
-                <td>800-273-8255</td>
+              <tr title="65+ or adults with a disability of mental illness">
+                <td>Seniors' Friendship</td>
+                <td>800-971-0016</td>
+                <td>N/A</td>
+              </tr>
+
+              <tr title="Crisis line for gay/questioning youth up to age 24">
+                <td>Trevor Line</td>
+                <td>866-488-7386</td>
+                <td>N/A</td>
+              </tr>
+              <tr title="Trained peer advocates">
+                <td>SF Valley Warm Line</td>
+                <td>866-761-4899</td>
                 <td>N/A</td>
               </tr>
             </tbody>
@@ -82,22 +85,20 @@
             <table class="table table-hover">
               <thead>
                 <tr>
-                  <th scope="col">Organizationsss</th>
+                  <th scope="col">Organization</th>
                   <th scope="col">Phone</th>
-                  <th scope="col">Email</th>
+                  <th scope="col">Website</th>
                 </tr>
               </thead>
               <tbody>
-                <tr
-                  title="Suicide hotline: for those in suicidal crisis or know someone who is in crisis"
-                >
+                <tr title="Placeholder">
                   <td>LAPD Dispatch</td>
                   <td>213-928-8223</td>
                   <td>N/A</td>
                 </tr>
-                <tr title="Suicide hotline: Spanish">
-                  <td>Spanish LifeLine</td>
-                  <td>888-628-9454</td>
+                <tr title="Placeholder">
+                  <td>Poison Control</td>
+                  <td>888-222-1222</td>
                   <td>N/A</td>
                 </tr>
                 <tr>
@@ -115,33 +116,79 @@
   <div id="row1">
     <div id="column1" class="col-md-6">
       <div>
-        <p class="offset-4"><b>HOTLINES</b></p>
-        <div class="info">
+        <button
+          class="offset-4 btn btn-info mb-2"
+          (click)="showAbuse = !showAbuse"
+        >
+          Abuse
+        </button>
+        <div *ngIf="showAbuse" class="info">
           <table class="table table-hover">
             <thead>
               <tr>
                 <th scope="col">Organization</th>
                 <th scope="col">Phone</th>
-                <th scope="col">Email</th>
+                <th scope="col">Website</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody class="overflow">
+              <tr
+                title="The NCEA understands, evaluates, and informs policy development to ensure public policy is better aligned with effective practices concerning older adults and elder abuse.
+
+                "
+              >
+                <td>Adult Protective Services: Elder Abuse</td>
+                <td>877-477-3646</td>
+                <td>
+                  <a href="https://ncea.acl.gov/" target="_blank"
+                    >www.ncea.acl.gov</a
+                  >
+                </td>
+              </tr>
+              <tr title="Child Safety">
+                <td>Child Abuse National Hotline</td>
+                <td>800-422-4453</td>
+                <td>N/A</td>
+              </tr>
+              <tr
+                title="Child Safety, Permanency, Access to effective and caring service"
+              >
+                <td>LA Dept of Child & Family Services (DCFS)</td>
+                <td>800-540-4000</td>
+                <td>
+                  <a href="http://dcfs.co.la.ca.us/" target="_blank"
+                    >www.dcfs.co.la.ca.us</a
+                  >
+                </td>
+              </tr>
+              <tr title="title">
+                <td>National Domestinc Violence Hotline</td>
+                <td>800-799-7233</td>
+                <td>
+                  <a href="https://www.thehotline.org/" target="_blank"
+                    >www.thehotline.org</a
+                  >
+                </td>
+              </tr>
               <tr
                 title="Suicide hotline: for those in suicidal crisis or know someone who is in crisis"
               >
-                <td>LifeLine</td>
-                <td>800-273-8255</td>
-                <td>N/A</td>
+                <td>Rape, Abuse, & Incest National Network</td>
+                <td>800-656-4673</td>
+                <td>
+                  <a href="https://www.rainn.org/" target="_blank"
+                    >www.rainn.org</a
+                  >
+                </td>
               </tr>
-              <tr title="Suicide hotline: Spanish">
-                <td>Spanish LifeLine</td>
-                <td>888-628-9454</td>
-                <td>N/A</td>
-              </tr>
-              <tr>
-                <td>LA County Department of Mental Health</td>
-                <td>800-854-7771</td>
-                <td>N/A</td>
+              <tr title="Services for Battered Women & Their Children">
+                <td>SOJOURN</td>
+                <td>310-264-6644</td>
+                <td>
+                  <a href="https://www.opcc.net/" target="_blank"
+                    >www.opcc.net</a
+                  >
+                </td>
               </tr>
             </tbody>
           </table>
@@ -151,33 +198,71 @@
     <div id="column2" class="col-md-6">
       <div>
         <div>
-          <p class="offset-4"><b>HOTLINES</b></p>
-          <div class="info">
+          <button
+            class="offset-4 btn btn-info mb-2"
+            (click)="showAlcoholDrugs = !showAlcoholDrugs"
+          >
+            Alcohol/Drugs Addiction
+          </button>
+          <div *ngIf="showAlcoholDrugs" class="info">
             <table class="table table-hover">
               <thead>
                 <tr>
-                  <th scope="col">Organization</th>
+                  <th scope="col">Organizations</th>
                   <th scope="col">Phone</th>
-                  <th scope="col">Email</th>
+                  <th scope="col">Website</th>
                 </tr>
               </thead>
               <tbody>
+                <tr title="help finding local AA groups with in LA/OC">
+                  <td>LA Alcoholics Anonymous Central Office</td>
+                  <td>800-923-8722</td>
+                  <td>
+                    <a href="https://lacoaa.org/" target="_blank"
+                      >www.lacoaa.org</a
+                    >
+                  </td>
+                </tr>
+                <tr title="call/see website for local meetings">
+                  <td>Alanon</td>
+                  <td>888-425-2666</td>
+                  <td>
+                    <a href="https://al-anon.org/" target="_blank"
+                      >www.al-anon.org</a
+                    >
+                  </td>
+                </tr>
+                <tr title="call/see website for local meetings">
+                  <td>Narcotics Anonymous</td>
+                  <td>
+                    800-863-2962 <br />
+                    888-622-4672 <i>Spanish</i>
+                  </td>
+                  <td>
+                    <a href="https://todayna.org/" target="_blank"
+                      >www.todayna.org</a
+                    >
+                  </td>
+                </tr>
+                <tr title="12 step secular substance abuse support groups">
+                  <td>SOS (Save Ourselves)</td>
+                  <td>323-666-4925</td>
+                  <td>
+                    <a href="https://sosssobriety.org/" target="_blank"
+                      >www.sossobriety.org</a
+                    >
+                  </td>
+                </tr>
                 <tr
-                  title="Suicide hotline: for those in suicidal crisis or know someone who is in crisis"
+                  title="Local and national referrals for inpatient/outpatient/detox with or without insurance"
                 >
-                  <td>LifeLine</td>
-                  <td>800-273-8255</td>
-                  <td>N/A</td>
-                </tr>
-                <tr title="Suicide hotline: Spanish">
-                  <td>Spanish LifeLine</td>
-                  <td>888-628-9454</td>
-                  <td>N/A</td>
-                </tr>
-                <tr>
-                  <td>LA County Department of Mental Health</td>
-                  <td>800-854-7771</td>
-                  <td>N/A</td>
+                  <td>Substance Abuse & Mental Health Services</td>
+                  <td>800-662-4357</td>
+                  <td>
+                    <a href="https://samhsa.gov/" target="_blank"
+                      >www.samhsa.gov</a
+                    >
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -186,78 +271,21 @@
       </div>
     </div>
   </div>
-  <div id="row1">
-    <div id="column1" class="col-md-6">
-      <div>
-        <p class="offset-4"><b>HOTLINES</b></p>
-        <div class="info">
-          <table class="table table-hover">
-            <thead>
-              <tr>
-                <th scope="col">Organization</th>
-                <th scope="col">Phone</th>
-                <th scope="col">Email</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr
-                title="Suicide hotline: for those in suicidal crisis or know someone who is in crisis"
-              >
-                <td>LifeLine</td>
-                <td>800-273-8255</td>
-                <td>N/A</td>
-              </tr>
-              <tr title="Suicide hotline: Spanish">
-                <td>Spanish LifeLine</td>
-                <td>888-628-9454</td>
-                <td>N/A</td>
-              </tr>
-              <tr>
-                <td>LA County Department of Mental Health</td>
-                <td>800-854-7771</td>
-                <td>N/A</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-    <div id="column2" class="col-md-6">
-      <div>
-        <div>
-          <p class="offset-4"><b>HOTLINES</b></p>
-          <div class="info">
-            <table class="table table-hover">
-              <thead>
-                <tr>
-                  <th scope="col">Organization</th>
-                  <th scope="col">Phone</th>
-                  <th scope="col">Email</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr
-                  title="Suicide hotline: for those in suicidal crisis or know someone who is in crisis"
-                >
-                  <td>LifeLine</td>
-                  <td>800-273-8255</td>
-                  <td>N/A</td>
-                </tr>
-                <tr title="Suicide hotline: Spanish">
-                  <td>Spanish LifeLine</td>
-                  <td>888-628-9454</td>
-                  <td>N/A</td>
-                </tr>
-                <tr>
-                  <td>LA County Department of Mental Health</td>
-                  <td>800-854-7771</td>
-                  <td>N/A</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
+  <br /><br />
+  <div class="resources-paragraph offset-2 col-md-7">
+    Sometimes, you'll need additional support or resources in your life. I've
+    gathered a list of wonderful institutions dedicated to helping improve the
+    lives of those in the community. Please feel free to ask me about them or
+    get into contact with them yousrself
   </div>
+  <br /><br />
+  <div class="resources-quote offset-4 ">
+    It always seems impossible until it's done
+  </div>
+  <p class="resources-quote offset-6">-Nelson Mandela</p>
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
 </div>

@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Acme|Bree+Serif|Fredericka+the+Great|Fugaz+One|Pacifico");
+
+.cursive-shadow {
+  font-family: "Pacifico", cursive;
+  /* font-size: 48px; */
+  font-size: 150%;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+.pacifico {
+  font-family: "Pacifico", cursive;
+}
+.abrilFatface {
+  font-family: "Abril Fatface", cursive;
+}
+.acme {
+  font-family: "Acme", sans-serif;
+}
+.breeSerif {
+  font-family: "Bree Serif", serife;
+}
+.fugazOne {
+  font-family: "Fugaz One", cursive;
+}
+.fredericka {
+  font-family: "Fredericka the Great", cursive;
+}

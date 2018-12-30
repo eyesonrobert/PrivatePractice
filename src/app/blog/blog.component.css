@@ -1,0 +1,10 @@
+.blog-title {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 40px;
+}
+.blog {
+  /* background-image: url("https://juegosrev.com/wp-content/uploads/2017/06/White-Abstract-Wallpapers-Gallery-89-Plus-PIC-WPW405898-1.png"); */
+  background-image: url("https://www.color-hex.com/palettes/22926.png");
+  height: 800px;
+  /* background-color: rgb(165, 192, 250); */
+}
