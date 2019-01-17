@@ -18,6 +18,7 @@ import { BusinessInformationComponent } from "./header/business-information/busi
 import { CommonModule } from "@angular/common";
 import { NavbarComponent } from "./navbar/navbar.component";
 import { CbtComponent } from "./specialties/cbt/cbt.component";
+import { IptComponent } from "./specialties/ipt/ipt.component";
 
 const appRoutes: Routes = [
   { path: "", component: HomeComponent },
@@ -28,7 +29,8 @@ const appRoutes: Routes = [
   { path: "resources", component: ResourcesComponent },
   { path: "faq", component: FAQComponent },
   { path: "blog", component: BlogComponent },
-  { path: "cbt", component: CbtComponent }
+  { path: "cbt", component: CbtComponent },
+  { path: "ipt", component: IptComponent }
 ];
 
 @NgModule({
@@ -45,7 +47,8 @@ const appRoutes: Routes = [
     BlogComponent,
     BusinessInformationComponent,
     NavbarComponent,
-    CbtComponent
+    CbtComponent,
+    IptComponent
   ],
   imports: [
     BrowserModule,

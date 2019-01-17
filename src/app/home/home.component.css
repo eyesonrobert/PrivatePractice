@@ -20,3 +20,7 @@
   flex-direction: column;
   font-size: 110%;
 }
+.background {
+  background-image: url("https://www.color-hex.com/palettes/22926.png");
+  height: 550px;
+}
